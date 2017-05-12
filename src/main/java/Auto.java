@@ -1,5 +1,6 @@
+import interfaces.JavaTrainingEntity;
 
-public class Auto implements Fahrzeug, Nummernschild {
+public class Auto implements Fahrzeug, JavaTrainingEntity {
 
     private String name;
     private int jahrgang, ps, nummer;
