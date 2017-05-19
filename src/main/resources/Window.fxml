@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane styleClass="content" fx:id="root" minWidth="750" prefWidth="1250" maxWidth="Infinity" minHeight="500" prefHeight="750" maxHeight="Infinity"
+            xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="stage.AdvancedStageController">
+    <HBox AnchorPane.topAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" minHeight="50" maxHeight="50" onDragDetected="#startMoveWindow"
+          onMouseClicked="#mouseClicked" onMouseDragged="#moveWindow" onMouseDragExited="#endMoveWindow" styleClass="title-bar">
+
+        <HBox alignment="CENTER" HBox.hgrow="ALWAYS">
+            <Label styleClass="title" text="Flat Win"/>
+        </HBox>
+        <AnchorPane styleClass="headerFunction" minWidth="45" maxWidth="30" minHeight="30" maxHeight="30">
+            <ImageView AnchorPane.leftAnchor="16" AnchorPane.topAnchor="9" fitHeight="12" fitWidth="12">
+                <Image url="images/minimize.png"/>
+            </ImageView>
+        </AnchorPane>
+        <AnchorPane styleClass="headerFunction" minWidth="45" maxWidth="45" minHeight="30" maxHeight="30">
+            <ImageView AnchorPane.leftAnchor="16" AnchorPane.topAnchor="9" fitHeight="12" fitWidth="12">
+                <Image url="images/maximized.png"/>
+            </ImageView>
+        </AnchorPane>
+        <AnchorPane styleClass="headerFunctionClose" minWidth="45" maxWidth="45" minHeight="30" maxHeight="30">
+            <ImageView AnchorPane.leftAnchor="16" AnchorPane.topAnchor="9" fitHeight="12" fitWidth="12">
+                <Image url="images/close.png"/>
+            </ImageView>
+        </AnchorPane>
+    </HBox>
+    <AnchorPane styleClass="title-bar" minWidth="50" maxWidth="150" AnchorPane.leftAnchor="0" AnchorPane.topAnchor="0" AnchorPane.bottomAnchor="0">
+        <AnchorPane AnchorPane.leftAnchor="0" AnchorPane.topAnchor="0" styleClass="headerFunction" minWidth="50" maxWidth="50" minHeight="50" maxHeight="50">
+            <ImageView AnchorPane.leftAnchor="17" AnchorPane.topAnchor="17" fitHeight="16" fitWidth="16">
+                <Image url="images/menu.png"/>
+            </ImageView>
+        </AnchorPane>
+        <AnchorPane styleClass="headerFunction" AnchorPane.leftAnchor="0" AnchorPane.topAnchor="50" minWidth="50" maxWidth="50" minHeight="50" maxHeight="50">
+            <ImageView AnchorPane.leftAnchor="17" AnchorPane.topAnchor="17" fitHeight="16" fitWidth="16">
+                <Image url="images/abbrechnungen.png"/>
+            </ImageView>
+        </AnchorPane>
+        <AnchorPane styleClass="headerFunction" AnchorPane.leftAnchor="0" AnchorPane.topAnchor="100" minWidth="50" maxWidth="50" minHeight="50" maxHeight="50">
+            <ImageView AnchorPane.leftAnchor="17" AnchorPane.topAnchor="17" fitHeight="16" fitWidth="16">
+                <Image url="images/performance.png"/>
+            </ImageView>
+        </AnchorPane>
+        <AnchorPane styleClass="headerFunction" AnchorPane.leftAnchor="0" AnchorPane.topAnchor="150" minWidth="50" maxWidth="50" minHeight="50" maxHeight="50">
+            <ImageView AnchorPane.leftAnchor="17" AnchorPane.topAnchor="17" fitHeight="16" fitWidth="16">
+                <Image url="images/customer.png"/>
+            </ImageView>
+        </AnchorPane>
+        <AnchorPane styleClass="headerFunction" AnchorPane.leftAnchor="0" AnchorPane.topAnchor="250" minWidth="50" maxWidth="50" minHeight="50" maxHeight="50">
+            <ImageView AnchorPane.leftAnchor="17" AnchorPane.topAnchor="17" fitHeight="16" fitWidth="16">
+                <Image url="images/categories.png"/>
+            </ImageView>
+        </AnchorPane>
+        <AnchorPane styleClass="headerFunction" AnchorPane.leftAnchor="0" AnchorPane.topAnchor="200" minWidth="50" maxWidth="50" minHeight="50" maxHeight="50">
+            <ImageView AnchorPane.leftAnchor="17" AnchorPane.topAnchor="17" fitHeight="16" fitWidth="16">
+                <Image url="images/mitarbeiter.png"/>
+            </ImageView>
+        </AnchorPane>
+        <AnchorPane styleClass="headerFunction" AnchorPane.leftAnchor="0" AnchorPane.topAnchor="300" minWidth="50" maxWidth="50" minHeight="50" maxHeight="50">
+            <ImageView AnchorPane.leftAnchor="17" AnchorPane.topAnchor="17" fitHeight="16" fitWidth="16">
+                <Image url="images/abbrechnungen.png"/>
+            </ImageView>
+        </AnchorPane>
+        <AnchorPane styleClass="headerFunction" AnchorPane.leftAnchor="0" AnchorPane.bottomAnchor="0" minWidth="50" maxWidth="50" minHeight="50" maxHeight="50">
+            <ImageView AnchorPane.leftAnchor="17" AnchorPane.topAnchor="17" fitHeight="16" fitWidth="16">
+                <Image url="images/info.png"/>
+            </ImageView>
+        </AnchorPane>
+    </AnchorPane>
+</AnchorPane>

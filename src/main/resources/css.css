@@ -1,0 +1,53 @@
+/* Dunkelgrau #444444
+   Grau #6A6A6A
+   Hellgrau #B2B2B2
+   Hover #969696
+
+   Dark #33363B
+   Hell #929CA6
+   Select #BDCBD6
+ */
+
+.content {
+    -fx-background-color: #6A6A6A;
+}
+
+.title-bar {
+    -fx-padding: 0px;
+    -fx-background-color: #444444;
+}
+
+.title-bar Label {
+    -fx-text-fill: white;
+}
+
+.title, .close-button {
+    -fx-font-family: Arial;
+    -fx-font-weight: 700;
+}
+
+.title {
+    -fx-font-size: 18px;
+}
+
+.close-button {
+    -fx-font-size: 12px;
+    -fx-padding: 1px;
+}
+
+.close-button:hover {
+    -fx-border-color: white;
+    -fx-border-size: 1px;
+    -fx-border-style: solid;
+}
+
+.headerFunction:hover {
+    -fx-background-color: #8b8b8b;
+    -fx-cursor: hand;
+}
+
+.headerFunctionClose:hover {
+    -fx-background-color: red;
+    -fx-cursor: hand;
+}
+
