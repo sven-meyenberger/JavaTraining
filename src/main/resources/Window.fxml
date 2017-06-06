@@ -11,17 +11,17 @@
         <HBox alignment="CENTER" HBox.hgrow="ALWAYS">
             <Label styleClass="title" text="Flat Win"/>
         </HBox>
-        <AnchorPane styleClass="headerFunction" minWidth="45" maxWidth="30" minHeight="30" maxHeight="30">
+        <AnchorPane styleClass="headerFunction" minWidth="45" maxWidth="30" minHeight="30" maxHeight="30" onMouseClicked="#minimize">
             <ImageView AnchorPane.leftAnchor="16" AnchorPane.topAnchor="9" fitHeight="12" fitWidth="12">
                 <Image url="images/minimize.png"/>
             </ImageView>
         </AnchorPane>
-        <AnchorPane styleClass="headerFunction" minWidth="45" maxWidth="45" minHeight="30" maxHeight="30">
+        <AnchorPane styleClass="headerFunction" minWidth="45" maxWidth="45" minHeight="30" maxHeight="30" onMouseClicked="#maximize">
             <ImageView AnchorPane.leftAnchor="16" AnchorPane.topAnchor="9" fitHeight="12" fitWidth="12">
                 <Image url="images/maximized.png"/>
             </ImageView>
         </AnchorPane>
-        <AnchorPane styleClass="headerFunctionClose" minWidth="45" maxWidth="45" minHeight="30" maxHeight="30">
+        <AnchorPane styleClass="headerFunctionClose" minWidth="45" maxWidth="45" minHeight="30" maxHeight="30" onMouseClicked="#close">
             <ImageView AnchorPane.leftAnchor="16" AnchorPane.topAnchor="9" fitHeight="12" fitWidth="12">
                 <Image url="images/close.png"/>
             </ImageView>

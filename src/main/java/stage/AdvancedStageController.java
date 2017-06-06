@@ -1,11 +1,11 @@
 package stage;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.shape.Rectangle;
 import javafx.stage.Popup;
+import javafx.stage.Stage;
 import javafx.stage.Window;
 
 public class AdvancedStageController {
@@ -20,7 +20,7 @@ public class AdvancedStageController {
 
     @FXML
     public void close(MouseEvent evt) {
-        ((Label) evt.getSource()).getScene().getWindow().hide();
+        System.exit(0);
     }
 
     @FXML
@@ -70,5 +70,17 @@ public class AdvancedStageController {
     public void mouseClicked(MouseEvent mouseEvent) {
         System.err.println("getX(): " + mouseEvent.getX() + "/ getSceneX(): " + mouseEvent.getSceneX() + " / getScreenX(): " + mouseEvent.getScreenX()) ;
         System.err.println("getY(): " + mouseEvent.getY() + "/ getSceneY(): " + mouseEvent.getSceneY() + " / getScreenY(): " + mouseEvent.getScreenY()) ;
+    }
+
+    @FXML
+    public void minimize(MouseEvent mouseEvent) {
+        Stage stage = (Stage) root.getScene().getWindow();
+        stage.setIconified(true);
+    }
+
+    @FXML
+    public void maximize(MouseEvent mouseEvent) {
+        Stage stage = (Stage) root.getScene().getWindow();
+        stage.setFullScreen(true);
     }
 }
